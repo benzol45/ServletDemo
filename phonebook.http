@@ -1,0 +1,24 @@
+GET http://127.0.0.1:8080/PhoneBook_war/api
+
+<> 2026-04-30T211135.200.json
+<> 2026-04-30T210943.200.json
+
+###
+GET http://127.0.0.1:8080/PhoneBook_war/api?name=John
+
+<> 2026-04-30T211132.200.json
+<> 2026-04-30T211118.200.json
+
+###
+POST http://127.0.0.1:8080/PhoneBook_war/api
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "phone": "+11112344567"
+}
+
+###
+DELETE http://127.0.0.1:8080/PhoneBook_war/api?phone=%2B11112344537
+
