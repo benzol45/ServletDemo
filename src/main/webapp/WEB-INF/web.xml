@@ -1,0 +1,14 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>contactServlet</servlet-name>
+        <servlet-class>com.phonebook.servlet.ContactServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>contactServlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+</web-app>
